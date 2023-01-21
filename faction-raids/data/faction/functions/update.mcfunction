@@ -169,7 +169,7 @@ tag @a[scores={respawn.dead=1..},gamemode=survival] add respawn.toSurvival
 tag @a[scores={respawn.dead=1..},gamemode=adventure] add respawn.toAdventure
 
 scoreboard players operation @a[scores={respawn.timer=1..}] respawn.timer -= 1 factions.math
-
+t
 # Force spectator mode while dead
 gamemode spectator @a[scores={respawn.dead=1..},gamemode=!spectator]
 tag @a[scores={respawn.timer=0,respawn.dead=1..},gamemode=spectator] add respawn.respawning
@@ -177,4 +177,4 @@ tag @a[scores={respawn.timer=0,respawn.dead=1..},gamemode=spectator] add respawn
 execute as @a[scores={respawn.timer=1..},gamemode=spectator] run title @s actionbar [{"text":"You died! Respawn in: ","color":"dark_red"},{"score":{"name":"@s[scores={respawn.timer=1..},gamemode=spectator]","objective":"respawn.timer"},"color":"red"}]
 
 # Respawn only if not in a raid
-execute unless score raid_bar-01 factions.raid_stage = 1 factions.math run execute unless score raid_bar-02 factions.raid_stage = 1 run execute unless score raid_bar-03 factions.raid_stage = 1 run execute unless score raid_bar-04 factions.raid_stage = 1 run execute unless score raid_bar-05 factions.raid_stage = 1 run execute unless score raid_bar-06 factions.raid_stage = 1 run execute unless score raid_bar-07 factions.raid_stage = 1 run execute unless score raid_bar-08 factions.raid_stage = 1 run execute unless score raid_bar-09 factions.raid_stage = 1 run execute unless score raid_bar-10 factions.raid_stage = 1 run execute unless score raid_bar-11 factions.raid_stage = 1 run execute unless score raid_bar-12 factions.raid_stage = 1 run execute unless score raid_bar-13 factions.raid_stage = 1 run execute unless score raid_bar-14 factions.raid_stage = 1 run execute unless score raid_bar-15 factions.raid_stage = 1 run function faction:respawn
+execute unless score raid_bar-01 factions.raid_stage = 1 factions.math run execute unless score raid_bar-02 factions.raid_stage = 1 factions.math run execute unless score raid_bar-03 factions.raid_stage = 1 factions.math run execute unless score raid_bar-04 factions.raid_stage = 1 factions.math run execute unless score raid_bar-05 factions.raid_stage = 1 factions.math run execute unless score raid_bar-06 factions.raid_stage = 1 factions.math run execute unless score raid_bar-07 factions.raid_stage = 1 factions.math run execute unless score raid_bar-08 factions.raid_stage = 1 factions.math run execute unless score raid_bar-09 factions.raid_stage = 1 factions.math run execute unless score raid_bar-10 factions.raid_stage = 1 factions.math run execute unless score raid_bar-11 factions.raid_stage = 1 factions.math run execute unless score raid_bar-12 factions.raid_stage = 1 factions.math run execute unless score raid_bar-13 factions.raid_stage = 1 factions.math run execute unless score raid_bar-14 factions.raid_stage = 1 factions.math run execute unless score raid_bar-15 factions.raid_stage = 1 factions.math run function faction:respawn
