@@ -17,4 +17,8 @@ scoreboard players enable @s raid-red
 scoreboard players enable @s raid-green
 scoreboard players enable @s raid-yellow
 
+scoreboard players enable @s war-red
+scoreboard players enable @s war-green
+scoreboard players enable @s war-yellow
+
 scoreboard players set @s join-blue 0

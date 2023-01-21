@@ -79,6 +79,11 @@ scoreboard objectives add raid-blue trigger
 scoreboard objectives add raid-green trigger
 scoreboard objectives add raid-yellow trigger
 
+scoreboard objectives add war-red trigger
+scoreboard objectives add war-blue trigger
+scoreboard objectives add war-green trigger
+scoreboard objectives add war-yellow trigger
+
 # ---- Raid Facilitators ----
 scoreboard objectives add factions.timer dummy
 
@@ -106,6 +111,13 @@ scoreboard players set raid_bar-13 factions.timer 0
 scoreboard players set raid_bar-14 factions.timer 0
 scoreboard players set raid_bar-15 factions.timer 0
 
+scoreboard players set war_bar-01 factions.timer 0
+scoreboard players set war_bar-02 factions.timer 0
+scoreboard players set war_bar-03 factions.timer 0
+scoreboard players set war_bar-04 factions.timer 0
+scoreboard players set war_bar-05 factions.timer 0
+scoreboard players set war_bar-06 factions.timer 0
+
 # 0 - pre-raid
 # 1 - raid
 # 2 - post-raid
@@ -127,6 +139,13 @@ scoreboard players set raid_bar-13 factions.raid_stage 0
 scoreboard players set raid_bar-14 factions.raid_stage 0
 scoreboard players set raid_bar-15 factions.raid_stage 0
 
+scoreboard players set war_bar-01 factions.raid_stage 0
+scoreboard players set war_bar-02 factions.raid_stage 0
+scoreboard players set war_bar-03 factions.raid_stage 0
+scoreboard players set war_bar-04 factions.raid_stage 0
+scoreboard players set war_bar-05 factions.raid_stage 0
+scoreboard players set war_bar-06 factions.raid_stage 0
+
 scoreboard objectives add factions.next_stage dummy
 
 scoreboard players set raid_bar-01 factions.next_stage 0
@@ -144,6 +163,13 @@ scoreboard players set raid_bar-12 factions.next_stage 0
 scoreboard players set raid_bar-13 factions.next_stage 0
 scoreboard players set raid_bar-14 factions.next_stage 0
 scoreboard players set raid_bar-15 factions.next_stage 0
+
+scoreboard players set war_bar-01 factions.next_stage 0
+scoreboard players set war_bar-02 factions.next_stage 0
+scoreboard players set war_bar-03 factions.next_stage 0
+scoreboard players set war_bar-04 factions.next_stage 0
+scoreboard players set war_bar-05 factions.next_stage 0
+scoreboard players set war_bar-06 factions.next_stage 0
 
 scoreboard players set raid_bar-01 factions.team 0
 scoreboard players set raid_bar-02 factions.team 0
@@ -177,6 +203,13 @@ bossbar add raid_bar-12 ""
 bossbar add raid_bar-13 ""
 bossbar add raid_bar-14 ""
 bossbar add raid_bar-15 ""
+
+bossbar add war_bar-01 ""
+bossbar add war_bar-02 ""
+bossbar add war_bar-03 ""
+bossbar add war_bar-04 ""
+bossbar add war_bar-05 ""
+bossbar add war_bar-06 ""
 
 # scoreboard players operation requires a source and sourceObjective
 # So we make a scoreboard player '1' and set their factions.math value to '1'
