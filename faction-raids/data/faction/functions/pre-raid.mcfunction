@@ -65,21 +65,21 @@ execute if score raid_bar-15 factions.next_stage = 1 factions.math run execute i
 execute if score raid_bar-15 factions.next_stage = 1 factions.math run execute if score raid_bar-15 factions.team = 2 factions.math run bossbar set raid_bar-15 name "Green, defend Base 15!"
 execute if score raid_bar-15 factions.next_stage = 1 factions.math run execute if score raid_bar-15 factions.team = 3 factions.math run bossbar set raid_bar-15 name "Yellow, defend Base 15!"
 
-execute if score @s raid-base = 1 factions.math run bossbar set raid_bar-01 color dark_gray
-execute if score @s raid-base = 2 factions.math run bossbar set raid_bar-02 color dark_gray
-execute if score @s raid-base = 3 factions.math run bossbar set raid_bar-03 color dark_gray
-execute if score @s raid-base = 4 factions.math run bossbar set raid_bar-04 color dark_gray
-execute if score @s raid-base = 5 factions.math run bossbar set raid_bar-05 color dark_gray
-execute if score @s raid-base = 6 factions.math run bossbar set raid_bar-06 color dark_gray
-execute if score @s raid-base = 7 factions.math run bossbar set raid_bar-07 color dark_gray
-execute if score @s raid-base = 8 factions.math run bossbar set raid_bar-08 color dark_gray
-execute if score @s raid-base = 9 factions.math run bossbar set raid_bar-09 color dark_gray
-execute if score @s raid-base = 10 factions.math run bossbar set raid_bar-10 color dark_gray
-execute if score @s raid-base = 11 factions.math run bossbar set raid_bar-11 color dark_gray
-execute if score @s raid-base = 12 factions.math run bossbar set raid_bar-12 color dark_gray
-execute if score @s raid-base = 13 factions.math run bossbar set raid_bar-13 color dark_gray
-execute if score @s raid-base = 14 factions.math run bossbar set raid_bar-14 color dark_gray
-execute if score @s raid-base = 15 factions.math run bossbar set raid_bar-15 color dark_gray
+execute if score @s raid-base = 1 factions.math run bossbar set raid_bar-01 color purple
+execute if score @s raid-base = 2 factions.math run bossbar set raid_bar-02 color purple
+execute if score @s raid-base = 3 factions.math run bossbar set raid_bar-03 color purple
+execute if score @s raid-base = 4 factions.math run bossbar set raid_bar-04 color purple
+execute if score @s raid-base = 5 factions.math run bossbar set raid_bar-05 color purple
+execute if score @s raid-base = 6 factions.math run bossbar set raid_bar-06 color purple
+execute if score @s raid-base = 7 factions.math run bossbar set raid_bar-07 color purple
+execute if score @s raid-base = 8 factions.math run bossbar set raid_bar-08 color purple
+execute if score @s raid-base = 9 factions.math run bossbar set raid_bar-09 color purple
+execute if score @s raid-base = 10 factions.math run bossbar set raid_bar-10 color purple
+execute if score @s raid-base = 11 factions.math run bossbar set raid_bar-11 color purple
+execute if score @s raid-base = 12 factions.math run bossbar set raid_bar-12 color purple
+execute if score @s raid-base = 13 factions.math run bossbar set raid_bar-13 color purple
+execute if score @s raid-base = 14 factions.math run bossbar set raid_bar-14 color purple
+execute if score @s raid-base = 15 factions.math run bossbar set raid_bar-15 color purple
 
 execute if score @s raid-base = 1 factions.math run bossbar set raid_bar-01 visible true
 execute if score @s raid-base = 2 factions.math run bossbar set raid_bar-02 visible true
