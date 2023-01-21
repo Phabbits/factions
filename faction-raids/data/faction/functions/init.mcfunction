@@ -232,5 +232,13 @@ scoreboard players set 13 factions.math 13
 scoreboard players set 14 factions.math 14
 scoreboard players set 15 factions.math 15
 
+# ---- Respawn Timer ----
+scoreboard objectives add respawn.dead deathCount
+scoreboard objectives add respawn.timer dummy
+# scoreboard player set <targets> <objective> <score>
+# `default` is another player on the scoreboard
+scoreboard players set default respawn.timer 100
+gamerule doImmediateRespawn true
+
 # ---- Complete ----
 tellraw @a {"color":"green","text":"Factions loaded!"}
