@@ -23,9 +23,9 @@ execute if score @s factions.team = 3 factions.math run scoreboard players set w
 function faction:pre-war
 
 # Disable trigger for all players
-execute if score @s factions.team = 0 factions.math run execute as @a[team=red] trigger war-blue
+execute if score @s factions.team = 0 factions.math run execute as @a[team=red] run trigger war-blue
 execute if score @s factions.team = 0 factions.math run scoreboard players set @a[team=red] war-blue 0
-execute if score @s factions.team = 2 factions.math run execute as @a[team=green] trigger war-blue
+execute if score @s factions.team = 2 factions.math run execute as @a[team=green] run trigger war-blue
 execute if score @s factions.team = 2 factions.math run scoreboard players set @a[team=green] war-blue 0
-execute if score @s factions.team = 3 factions.math run execute as @a[team=yellow] trigger war-blue
+execute if score @s factions.team = 3 factions.math run execute as @a[team=yellow] run trigger war-blue
 execute if score @s factions.team = 3 factions.math run scoreboard players set @a[team=yellow] war-blue 0
