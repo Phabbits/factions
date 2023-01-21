@@ -79,6 +79,6 @@ execute if score raid_bar-14 factions.next_stage = 1 factions.math run execute i
 execute if score raid_bar-14 factions.next_stage = 1 factions.math run execute if score raid_bar-14 factions.team = 2 factions.math run scoreboard players enable @a raid-green
 execute if score raid_bar-14 factions.next_stage = 1 factions.math run execute if score raid_bar-14 factions.team = 3 factions.math run scoreboard players enable @a raid-yellow
 execute if score raid_bar-15 factions.next_stage = 1 factions.math run execute if score raid_bar-15 factions.team = 0 factions.math run scoreboard players enable @a raid-red
-execute if score raid_bar-15 factions.next_stage = 1 factions.math run execute if score raid_bar-15 factions.team = 1 factions.math scoreboard players enable @a raid-blue
+execute if score raid_bar-15 factions.next_stage = 1 factions.math run execute if score raid_bar-15 factions.team = 1 factions.math run scoreboard players enable @a raid-blue
 execute if score raid_bar-15 factions.next_stage = 1 factions.math run execute if score raid_bar-15 factions.team = 2 factions.math run scoreboard players enable @a raid-green
 execute if score raid_bar-15 factions.next_stage = 1 factions.math run execute if score raid_bar-15 factions.team = 3 factions.math run scoreboard players enable @a raid-yellow

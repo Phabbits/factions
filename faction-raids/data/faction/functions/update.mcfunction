@@ -49,7 +49,7 @@ execute store result bossbar raid_bar-14 value run scoreboard players get raid_b
 execute store result bossbar raid_bar-15 value run scoreboard players get raid_bar-15 factions.timer
 
 # Timer up!
-execute if score raid_bar-01 factions.timer = 0 factions.math run execute scoreboard players set raid_bar-01 factions.next_stage = 1
+execute if score raid_bar-01 factions.timer = 0 factions.math run scoreboard players set raid_bar-01 factions.next_stage 1
 execute if score raid_bar-01 factions.timer = 0 factions.math run execute if score raid_bar-01 factions.raid_stage = 0 factions.math run faction:raid
 execute if score raid_bar-01 factions.timer = 0 factions.math run execute if score raid_bar-01 factions.raid_stage = 1 factions.math run faction:post-raid
 execute if score raid_bar-01 factions.timer = 0 factions.math run execute if score raid_bar-01 factions.raid_stage = 2 factions.math run faction:no-raid
