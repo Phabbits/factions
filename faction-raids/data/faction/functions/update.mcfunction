@@ -17,10 +17,10 @@ execute as @a[scores={raid-green=1}] run function faction:raid_green
 execute as @a[scores={raid-yellow=1}] run function faction:raid_yellow
 
 # Call wars
-execute as @a[scores={raid-red=1}] run function faction:war_red
-execute as @a[scores={raid-blue=1}] run function faction:war_blue
-execute as @a[scores={raid-green=1}] run function faction:war_green
-execute as @a[scores={raid-yellow=1}] run function faction:war_yellow
+execute as @a[scores={war-red=1}] run function faction:war_red
+execute as @a[scores={war-blue=1}] run function faction:war_blue
+execute as @a[scores={war-green=1}] run function faction:war_green
+execute as @a[scores={war-yellow=1}] run function faction:war_yellow
 
 # ---- Execute timers ----
 # Count down timer
