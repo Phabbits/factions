@@ -17,7 +17,11 @@ tellraw @a[tag=factions.raider] {"color":"red","text":"You are raiding Red!"}
 tellraw @a[tag=factions.defender] {"color":"red","text":"Red is raiding you!"}
 
 # Setup bossbar
-bossbar set factions.raid_bar name "Blue Raid on Red!"
+
+# Specify base
+execute if score @s raid-base = 0 factions.math run bossbar set factions.raid_bar name "Blue Raid on Red Base 0!"
+execute if score @s raid-base = 1 factions.math run bossbar set factions.raid_bar name "Blue Raid on Red Base 1!"
+execute if score @s raid-base = 2 factions.math run bossbar set factions.raid_bar name "Blue Raid on Red Base 2!"
 bossbar set factions.raid_bar color red
 bossbar set factions.raid_bar visible true
 bossbar set factions.raid_bar players @a[tag=factions.raiding]

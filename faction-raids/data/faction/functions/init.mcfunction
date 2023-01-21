@@ -10,14 +10,18 @@ scoreboard players set default factions.timer 200
 scoreboard players set raid factions.timer 0
 scoreboard players set 1 factions.math 1
 scoreboard players set 0 factions.math 0
+scoreboard players set 2 factions.math 2
 
 tellraw @a {"color":"green","text":"Factions loaded!"}
 
 # Trigger objectives is how non-operator players can call raids
 # /trigger raid-red
 scoreboard objectives add join-red trigger
-scoreboard objectives add raid-red trigger
 scoreboard objectives add join-blue trigger
+
+scoreboard objectives add raid-base trigger
+
+scoreboard objectives add raid-red trigger
 scoreboard objectives add raid-blue trigger
 # Enable joining triggers
 scoreboard players enable @a join-red
