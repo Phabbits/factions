@@ -12,12 +12,12 @@
 # war_bar-05 -  Blue v. Yellow | Yellow v. Blue
 # war_bar-06 - Green v. Yellow | Yellow v. Green
 
-execute if score war_bar-01 factions.next_stage = 1 factions.math run bossbar set war_bar-01 name "  Red  | War! |  Blue "
-execute if score war_bar-02 factions.next_stage = 1 factions.math run bossbar set war_bar-02 name "  Red  | War! | Green "
-execute if score war_bar-03 factions.next_stage = 1 factions.math run bossbar set war_bar-03 name "  Red  | War! | Yellow"
-execute if score war_bar-04 factions.next_stage = 1 factions.math run bossbar set war_bar-04 name " Blue  | War! | Green "
-execute if score war_bar-05 factions.next_stage = 1 factions.math run bossbar set war_bar-05 name " Blue  | War! | Yellow"
-execute if score war_bar-06 factions.next_stage = 1 factions.math run bossbar set war_bar-06 name " Green | War! | Yellow"
+execute if score war_bar-01 factions.next_stage = 1 factions.math run bossbar set war_bar-01 name "  Red  >> War! <<  Blue "
+execute if score war_bar-02 factions.next_stage = 1 factions.math run bossbar set war_bar-02 name "  Red  >> War! << Green "
+execute if score war_bar-03 factions.next_stage = 1 factions.math run bossbar set war_bar-03 name "  Red  >> War! << Yellow"
+execute if score war_bar-04 factions.next_stage = 1 factions.math run bossbar set war_bar-04 name " Blue  >> War! << Green "
+execute if score war_bar-05 factions.next_stage = 1 factions.math run bossbar set war_bar-05 name " Blue  >> War! << Yellow"
+execute if score war_bar-06 factions.next_stage = 1 factions.math run bossbar set war_bar-06 name " Green >> War! << Yellow"
 
 execute if score war_bar-01 factions.next_stage = 1 factions.math run bossbar set war_bar-01 color red
 execute if score war_bar-02 factions.next_stage = 1 factions.math run bossbar set war_bar-02 color red

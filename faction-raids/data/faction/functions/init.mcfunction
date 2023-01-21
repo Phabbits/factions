@@ -27,36 +27,36 @@ scoreboard objectives add Raid_Chest dummy
 scoreboard objectives setdisplay sidebar Raid_Chest
 
 # Add bases
-scoreboard players set Base-01 Raid_Chest 0
-scoreboard players set Base-02 Raid_Chest 0
-scoreboard players set Base-03 Raid_Chest 0
-scoreboard players set Base-04 Raid_Chest 0
-scoreboard players set Base-05 Raid_Chest 0
-scoreboard players set Base-06 Raid_Chest 0
-scoreboard players set Base-07 Raid_Chest 0
-scoreboard players set Base-08 Raid_Chest 0
-scoreboard players set Base-09 Raid_Chest 0
-scoreboard players set Base-10 Raid_Chest 0
-scoreboard players set Base-11 Raid_Chest 0
-scoreboard players set Base-12 Raid_Chest 0
-scoreboard players set Base-13 Raid_Chest 0
-scoreboard players set Base-14 Raid_Chest 0
-scoreboard players set Base-15 Raid_Chest 0
-team join neutral Base-01
-team join neutral Base-02
-team join neutral Base-03
-team join neutral Base-04
-team join neutral Base-05
-team join neutral Base-06
-team join neutral Base-07
-team join neutral Base-08
-team join neutral Base-09
-team join neutral Base-10
-team join neutral Base-11
-team join neutral Base-12
-team join neutral Base-13
-team join neutral Base-14
-team join neutral Base-15
+scoreboard players set B01 Raid_Chest 0
+scoreboard players set B02 Raid_Chest 0
+scoreboard players set B03 Raid_Chest 0
+scoreboard players set B04 Raid_Chest 0
+scoreboard players set B05 Raid_Chest 0
+scoreboard players set B06 Raid_Chest 0
+scoreboard players set B07 Raid_Chest 0
+scoreboard players set B08 Raid_Chest 0
+scoreboard players set B09 Raid_Chest 0
+scoreboard players set B10 Raid_Chest 0
+scoreboard players set B11 Raid_Chest 0
+scoreboard players set B12 Raid_Chest 0
+scoreboard players set B13 Raid_Chest 0
+scoreboard players set B14 Raid_Chest 0
+scoreboard players set B15 Raid_Chest 0
+team join neutral B01
+team join neutral B02
+team join neutral B03
+team join neutral B04
+team join neutral B05
+team join neutral B06
+team join neutral B07
+team join neutral B08
+team join neutral B09
+team join neutral B10
+team join neutral B11
+team join neutral B12
+team join neutral B13
+team join neutral B14
+team join neutral B15
 
 # ---- Triggers ----
 # Trigger objectives is how non-operator players can call functions
@@ -237,7 +237,7 @@ scoreboard objectives add respawn.dead deathCount
 scoreboard objectives add respawn.timer dummy
 # scoreboard player set <targets> <objective> <score>
 # `default` is another player on the scoreboard
-scoreboard players set default respawn.timer 100
+scoreboard players set default respawn.timer 200
 gamerule doImmediateRespawn true
 
 # ---- Complete ----
