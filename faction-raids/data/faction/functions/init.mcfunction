@@ -237,7 +237,7 @@ scoreboard objectives add respawn.dead deathCount
 scoreboard objectives add respawn.timer dummy
 # scoreboard player set <targets> <objective> <score>
 # `default` is another player on the scoreboard
-scoreboard players set default respawn.timer 200
+scoreboard players set default respawn.timer 1200
 gamerule doImmediateRespawn true
 
 # ---- Complete ----
