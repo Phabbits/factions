@@ -169,7 +169,7 @@ tag @a[scores={respawn.dead=1..},gamemode=survival] add respawn.toSurvival
 tag @a[scores={respawn.dead=1..},gamemode=adventure] add respawn.toAdventure
 
 scoreboard players operation @a[scores={respawn.timer=1..}] respawn.timer -= 1 factions.math
-t
+
 # Force spectator mode while dead
 gamemode spectator @a[scores={respawn.dead=1..},gamemode=!spectator]
 tag @a[scores={respawn.timer=0,respawn.dead=1..},gamemode=spectator] add respawn.respawning
