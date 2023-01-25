@@ -175,6 +175,7 @@ gamemode spectator @a[scores={respawn.dead=1..},gamemode=!spectator]
 tag @a[scores={respawn.timer=0,respawn.dead=1..},gamemode=spectator] add respawn.respawning
 # @s targets whoever is executing the command
 execute as @a[scores={respawn.timer=1..},gamemode=spectator] run title @s actionbar [{"text":"You died! Respawn in: ","color":"dark_red"},{"score":{"name":"@s[scores={respawn.timer=1..},gamemode=spectator]","objective":"respawn.timer"},"color":"red"}]
+execute as @a[scores={respawn.timer=1..},gamemode=spectator] run tp 0 0 0
 
 # Respawn only if not in a raid
 function faction:respawn
