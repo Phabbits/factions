@@ -24,4 +24,4 @@ scoreboard players enable @s war-yellow
 scoreboard players set @s join-red 0
 
 # Teleport to base
-tp 201  70  97
+tp 201 70 97
