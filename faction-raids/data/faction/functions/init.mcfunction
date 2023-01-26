@@ -242,3 +242,6 @@ gamerule doImmediateRespawn true
 
 # ---- Complete ----
 tellraw @a {"color":"green","text":"Factions loaded!"}
+
+# ---- Rules ----
+gamerule mobGriefing false
