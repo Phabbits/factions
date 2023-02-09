@@ -29,3 +29,18 @@ execute if score @s factions.team = 1 factions.math run execute as @a[team=blue]
 execute if score @s factions.team = 1 factions.math run scoreboard players set @a[team=blue] war-green 0
 execute if score @s factions.team = 3 factions.math run execute as @a[team=yellow] run trigger war-green
 execute if score @s factions.team = 3 factions.math run scoreboard players set @a[team=yellow] war-green 0
+
+# Prevent a truce
+execute if score @s factions.team = 0 factions.math run execute as @a[team=red] run trigger truce
+execute if score @s factions.team = 0 factions.math run scoreboard players set @a[team=red] truce 0
+execute if score @s factions.team = 1 factions.math run execute as @a[team=blue] run trigger truce
+execute if score @s factions.team = 1 factions.math run scoreboard players set @a[team=blue] truce 0
+execute if score @s factions.team = 2 factions.math run execute as @a[team=green] run trigger truce
+execute if score @s factions.team = 2 factions.math run scoreboard players set @a[team=green] truce 0
+execute if score @s factions.team = 3 factions.math run execute as @a[team=yellow] run trigger truce
+execute if score @s factions.team = 3 factions.math run scoreboard players set @a[team=yellow] truce 0
+# Reset any attempt at a truce
+scoreboard players set red factions.truce 0
+scoreboard players set blue factions.truce 0
+scoreboard players set green factions.truce 0
+scoreboard players set yellow factions.truce 0

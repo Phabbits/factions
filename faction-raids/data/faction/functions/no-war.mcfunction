@@ -33,3 +33,5 @@ execute if score war_bar-05 factions.next_stage = 1 factions.math run scoreboard
 execute if score war_bar-05 factions.next_stage = 1 factions.math run scoreboard players enable @a[team=yellow] war-blue
 execute if score war_bar-06 factions.next_stage = 1 factions.math run scoreboard players enable @a[team=green] war-yellow
 execute if score war_bar-06 factions.next_stage = 1 factions.math run scoreboard players enable @a[team=yellow] war-green
+
+scoreboard players enable @a truce

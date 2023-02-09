@@ -70,6 +70,8 @@ scoreboard players enable @a join-red
 scoreboard players enable @a join-blue
 scoreboard players enable @a join-green
 scoreboard players enable @a join-yellow
+# Truce
+scoreboard objectives add truce trigger
 
 # Raid triggers
 scoreboard objectives add raid-base trigger
@@ -94,6 +96,8 @@ scoreboard players set post-raid factions.timer 4000
 scoreboard players set pre-war factions.timer 4800
 scoreboard players set war factions.timer 12000
 scoreboard players set post-war factions.timer 8000
+scoreboard players set truce factions.timer 12000
+scoreboard players set post-truce factions.timer 8000
 
 scoreboard players set raid_bar-01 factions.timer 0
 scoreboard players set raid_bar-02 factions.timer 0
@@ -210,6 +214,15 @@ bossbar add war_bar-03 ""
 bossbar add war_bar-04 ""
 bossbar add war_bar-05 ""
 bossbar add war_bar-06 ""
+
+# Truces
+scoreboard objectives add factions.truce dummy
+scoreboard players set red factions.truce 0
+scoreboard players set blue factions.truce 0
+scoreboard players set green factions.truce 0
+scoreboard players set yellow factions.truce 0
+
+bossbar add truce_bar ""
 
 # scoreboard players operation requires a source and sourceObjective
 # So we make a scoreboard player '1' and set their factions.math value to '1'

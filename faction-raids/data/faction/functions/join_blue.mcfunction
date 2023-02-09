@@ -21,6 +21,8 @@ scoreboard players enable @s war-red
 scoreboard players enable @s war-green
 scoreboard players enable @s war-yellow
 
+scoreboard players enable @s truce
+
 scoreboard players set @s join-blue 0
 
 # Teleport to base

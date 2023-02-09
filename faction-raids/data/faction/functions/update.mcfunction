@@ -22,6 +22,9 @@ execute as @a[scores={war-blue=1}] run function faction:war_blue
 execute as @a[scores={war-green=1}] run function faction:war_green
 execute as @a[scores={war-yellow=1}] run function faction:war_yellow
 
+# Call truce
+execute as @a[scores={truce=1}] run function faction:request_truce
+
 # ---- Execute timers ----
 # Count down timer
 # scoreboard players operation <targets> <targetObjective> <operation> <source> <sourceObjective>
@@ -48,6 +51,8 @@ scoreboard players operation war_bar-04 factions.timer -= 1 factions.math
 scoreboard players operation war_bar-05 factions.timer -= 1 factions.math
 scoreboard players operation war_bar-06 factions.timer -= 1 factions.math
 
+scoreboard players operation truce_bar factions.timer -= 1 factions.math
+
 # Update bossbar
 # Only one entity is allowed
 execute store result bossbar raid_bar-01 value run scoreboard players get raid_bar-01 factions.timer
@@ -72,6 +77,8 @@ execute store result bossbar war_bar-03 value run scoreboard players get war_bar
 execute store result bossbar war_bar-04 value run scoreboard players get war_bar-04 factions.timer
 execute store result bossbar war_bar-05 value run scoreboard players get war_bar-05 factions.timer
 execute store result bossbar war_bar-06 value run scoreboard players get war_bar-06 factions.timer
+
+execute store result bossbar truce_bar value run scoreboard players get truce_bar factions.timer
 
 # Timer up!
 execute if score raid_bar-01 factions.timer = 0 factions.math run scoreboard players set raid_bar-01 factions.next_stage 1
@@ -159,6 +166,9 @@ execute if score war_bar-06 factions.timer = 0 factions.math run scoreboard play
 execute if score war_bar-06 factions.timer = 0 factions.math run execute if score war_bar-06 factions.raid_stage = 0 factions.math run function faction:war
 execute if score war_bar-06 factions.timer = 0 factions.math run execute if score war_bar-06 factions.raid_stage = 1 factions.math run function faction:post-war
 execute if score war_bar-06 factions.timer = 0 factions.math run execute if score war_bar-06 factions.raid_stage = 2 factions.math run function faction:no-war
+
+execute if score truce_bar factions.timer = 0 factions.math run execute if score truce_bar factions.raid_stage = 1 factions.math run function faction:post-truce
+execute if score truce_bar factions.timer = 0 factions.math run execute if score truce_bar factions.raid_stage = 2 factions.math run function faction:no-truce
 
 # ---- Respawn ----
 # Reset player timer when player is dead and not yet a spectator
