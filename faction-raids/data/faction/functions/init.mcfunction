@@ -96,7 +96,7 @@ scoreboard players set post-raid factions.timer 4000
 scoreboard players set pre-war factions.timer 4800
 scoreboard players set war factions.timer 12000
 scoreboard players set post-war factions.timer 8000
-scoreboard players set truce factions.timer 12000
+scoreboard players set truce factions.timer 24800
 scoreboard players set post-truce factions.timer 8000
 
 scoreboard players set raid_bar-01 factions.timer 0
